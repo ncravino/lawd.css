@@ -44,8 +44,8 @@ The text size for ```head```, ```body```. ```h1-6``` will also be set when inclu
 These classes allow you to add a border around each letter, in order to make it stand against backgrounds that have a mix of light and dark colours.
 You can change the color overriding ```--default-notoriousness-colour``` which is ```rgba(128,128,128,0.5)``` by default, see variables bellow for more info.
 
-- ```.notorious``` will add a ```var(--default-cuddle-notouriousness)```border using shadow around each letter. The default is 1px.
-- ```.blatant``` will add a ```var(--default-blatant-notouriousness)``` border using shadow around each letter. The default is 1.5px.
+- ```.notorious``` will add a ```var(--default-cuddle-notouriousness)```border using shadow around each letter. The default is 0.5px.
+- ```.blatant``` will add a ```var(--default-blatant-notouriousness)``` border using shadow around each letter. The default is 0.8px.
 
 ## Cuddliness
 
@@ -63,8 +63,8 @@ You can/should override any of the following variables:
 
 - ```--default-chonk-size``` sets the ```font-size```, default is ```1.1rem```
 - ```--default-chonk-height``` sets the ```line-height```, default is ```--default-chonk-size + 2rem```.
-- ```--default-thin-notoriousness``` sets the amount of pixels used by the shadow in ```.cuddly``` .
-- ```--default-notoriousness``` sets the amount of pixels used by the shadow in ```.itfits```.
+- ```--default-thin-notoriousness``` sets the amount of pixels used by the shadow in ```.cuddly```, default is 0.5px .
+- ```--default-notoriousness``` sets the amount of pixels used by the shadow in ```.itfits```, default is 0.8px.
 - ```--default-notoriousness-colour``` sets the colour of the shadow used by ```.cuddly``` and ```.itfits```, default is ```rgba(128, 128, 128, 0.5)```.
 - ```--default-cuddle-cuddliness``` sets the ```line-height``` for ```.cuddly```, default is ```1em``` .
 - ```--default-itfits-cuddliness``` sets the ```line-height``` for ```.itfits```, default is ```0.85em```.
