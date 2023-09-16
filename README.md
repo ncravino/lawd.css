@@ -1,6 +1,10 @@
 # Lawd.css
 
-"Simply the BESTiest CSS libary for text" \- a notourious chonky cat somewhere  
+"Simply the BESTiest CSS libary for text" 
+
+<img src="img/chonk.svg" width="50" height="50" alt="The Chonk"> 
+
+\- a notourious chonky cat somewhere  
 
 A minimalist CSS library using variables (see bellow) to do:
 - [Chonkyness](#chonkyness): 10 ```font-size``` classes.
