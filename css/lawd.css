@@ -6,6 +6,8 @@
     --default-notoriousness-colour: rgba(128, 128, 128, 0.5);
     --default-negative-thin-notoriousness: calc(0px - var(--default-thin-notoriousness));
     --default-negative-notoriousness: calc(0px - var(--default-notoriousness));
+    --default-cuddly-cuddliness: 1em; 
+    --default-itfits-cuddliness: 0.85em;
 }
 
 html,
@@ -66,12 +68,12 @@ h6 {
 
 }
 
-.gigachonk {
+.gojira {
     font-size: calc(var(--default-chonk-size) + 0.4rem);
 
 }
 
-.terachonk {
+.moonface {
     font-size: calc(var(--default-chonk-size) + 0.5rem);
 
 }
@@ -81,11 +83,11 @@ h6 {
 }
 
 .cuddly {
-    line-height: 1em;
+    line-height: var(--default-cuddly-cuddliness);
 }
 
 .itfits {
-    line-height: 0.85em;
+    line-height: var(--default-itfits-cuddliness);
 }
 
 .notorious {
