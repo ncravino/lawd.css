@@ -17,7 +17,7 @@ This library is licensed under a BSD-3-Clause [License](./LICENSE).
 
 ## Using
 
-Simply use the ```./css/lawd.css``` file from [https://github.com/ncravino/lawd.css](https://github.com/ncravino/lawd.css) together with other libraries. I like to use it with [chota.css](https://jenil.github.io/chota/), which is great for a modern minimalist CSS lib for grids and some styling.
+Simply use the ```./css/lawd.css``` file from [https://github.com/ncravino/lawd.css](https://github.com/ncravino/lawd.css) together with other libraries, imported before them. I like to use it with [chota.css](https://jenil.github.io/chota/), which is great for a modern minimalist CSS lib for grids and some styling.
 
 ## Chonkyness
 These classes allow you to change the size of the text, relative to ```--default-chonk-size```.

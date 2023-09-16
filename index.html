@@ -4,134 +4,187 @@
 </html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lawd.css</title>
     <link rel="icon" type="image/svg+xml" href="img/chonk.svg">
-    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
     <link rel="stylesheet" href="css/lawd.css">
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    
     <style>
-        :root{
-            --default-chonk-size: 1.2rem;
+        :root {
+            @import url(https://fonts.bunny.net/css?family=andika:400,400i,700,700i);
+            --font-family-sans: "Andika", display, serif;
+            --default-chonk-size: 1.4rem;
+            --font-size: 1.4rem;
         }
     </style>
 </head>
 
-<body class="container clearfix">
+<body>
 
-    <header style="padding: 1vh 0 0vh 0;min-height: 5vh;">
-        <div class="row" >
-        <div class="col-1-lg col-1-md hide-sm hide-xs">&nbsp;</div>
-        <div class="col-1 is-center is-marginless">
-            <img src="./img/chonk.svg" height="80px" width="80px" alt="The Chonk">
-        </div>
-        <div class="col">
-            <h1 id="lawd-css">Lawd.css</h1>
-            <p>&quot;Simply the BESTiest CSS libary for text&quot; - a notourious chonky cat somewhere  </p>
-        </div>        
-        <div class="col-1-lg col-1-md hide-sm hide-xs">&nbsp;</div>
-        </div>
-        </div>
-        <div class="row" >
-            <div class="col-1-lg col-1-md hide-sm hide-xs">&nbsp;</div>
+    <header class="container" style="min-height: 5vh;">
+        <div class="row">
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
             <div class="col">
-            <p>A minimalist CSS library using variables (see bellow) to do:</p>
-            <ul>
-            <li><a href="#chonkyness">Chonkyness</a>: 10 <code>font-size</code> classes.</li>
-            <li><a href="#notouriousness">Notouriousnes</a>: 2 text border sizes classes using a shadow, for visibility of text over mixed coloured backgrounds.</li>
-            <li><a href="#cuddliness">Cuddliness</a>: 2 <code>line-height</code> classes.</li>
-            </ul>
+                <h1 style="display: inline-block;" class="ohlawd" id="lawd-css"><img style="padding-right: 1rem;" src="./img/chonk.svg" width="25%" alt="The Chonk">Lawd.css</h1>
+                <p>&quot;Simply the BESTiest CSS libary for text&quot; - a notourious chonky cat somewhere </p>
+            </div>
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
         </div>
-        <div class="col-1-lg col-1-md hide-sm hide-xs">&nbsp;</div>
-    </div>
+        <div class="row">
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
+            <div class="col clearfix">
+                <p>A minimalist CSS library using variables (see bellow) to do:</p>
+                <ul>
+                    <li><a href="#chonkyness">Chonkyness</a>: 10 <code>font-size</code> classes.</li>
+                    <li><a href="#notouriousness">Notouriousnes</a>: 2 text border sizes classes using a shadow, for
+                        visibility of text over mixed coloured backgrounds.</li>
+                    <li><a href="#cuddliness">Cuddliness</a>: 2 <code>line-height</code> classes.</li>
+                </ul>
+            </div>
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
+        </div>
     </header>
 
-    <main class="row">
-
-        <div class="col-1-lg col-1-md">&nbsp;</div>
-        <div class="col">
-            <h2 id="license">License</h2>
-            <p>This library is licensed under a BSD-3-Clause <a href="./LICENSE">License</a>.</p>
-            <h2 id="using">Using</h2>
-            <p>Simply use the <code>./css/lawd.css</code> file from <a href="https://github.com/ncravino/lawd.css">https://github.com/ncravino/lawd.css</a> together with other libraries. I like to use it with <a href="https://jenil.github.io/chota/">chota.css</a>, which is great for a modern minimalist CSS lib for grids and some styling.</p>
-            <h2 id="chonkyness">Chonkyness</h2>
-            <p>These classes allow you to change the size of the text, relative to <code>--default-chonk-size</code>.
-            The text size for <code>head</code>, <code>body</code>. <code>h1-6</code> will also be set when including the <code>lawd.css</code> file.</p>
-            <ul>
-            <li class="tiny"><code>.tiny</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> minus <code>0.3rem</code>.</li>
-            <li class="thin"><code>.thin</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> minus <code>0.2rem</code>.</li>
-            <li class="fine"><code>.fine</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> minus <code>0.1rem</code>.</li>
-            <li class="chonk"><code>.chonk</code> will be equal to <code>--default-chonk-size</code>, html and body will also be set to this size.</li>
-            <li class="heckinchonker"><code>.heckinchonker</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> plus <code>0.1rem</code>, h6 will also be set to this size.</li>
-            <li class="heftychonk"><code>.heftychonk</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> plus <code>0.2rem</code>, h5 will also be set to this size.</li>
-            <li class="megachonk"><code>.megachonk</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> plus <code>0.3rem</code>, h4 will also be set to this size.</li>
-            <li class="gojira"><code>.gojira</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> plus <code>0.4rem</code>, h3 will also be set to this size.</li>
-            <li class="moonface"><code>.moonface</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> plus <code>0.5rem</code>, h2 will also be set to this size.</li>
-            <li class="ohlawd"><code>.ohlawd</code> will set the <code>font-size</code> to <code>--default-chonk-size</code> plus <code>0.6rem</code>, h1 will also be set to this size.</li>
-            </ul>
-            <h2 id="notouriousness">Notouriousness</h2>
-            <p>These classes allow you to add a border around each letter, in order to make it stand against backgrounds that have a mix of light and dark colours.
-            You can change the color overriding <code>--default-notoriousness-colour</code> which is <code>rgba(128,128,128,0.5)</code> by default, see variables bellow for more info.</p>
-            <ul>
-            <li class="notorious"><code>.notorious</code> will add a <code>var(--default-thin-notouriousness)</code> <span style="background-color: rgb(0,0,0);">border using shadow around each letter. The default is 1px.</span></li>
-            <li class="blatant"><code>.blatant</code> will add a <code>var(--default-notouriousness)</code> <span style="background-color: rgb(0,0,0);">border using shadow around each letter. The default is 1.5px.</span></li>
-            </ul>
-            <h2 id="cuddliness">Cuddliness</h2>
-            <p>These classes allow you to change the <code>line-height</code>.
-            The <code>line-height</code> set on import for <code>body</code> and <code>html</code> is <code>--default-chonk-height</code> which defaults to <code>var(--default-chonk-size) + 0.2rem</code>.</p>
-            <ul>
-            <li>This is the default <code>line-height</code>:
-<pre>Lorem ipsum dolor sit amet, 
+    <main class="container">
+        <div class="row">
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
+            <div class="col clearfix">
+                <h2 id="license">License</h2>
+                <p>This library is licensed under a BSD-3-Clause <a href="./LICENSE">License</a>.</p>
+                <h2 id="using">Using</h2>
+                <p>Simply use the <code>./css/lawd.css</code> file from <a
+                        href="https://github.com/ncravino/lawd.css">https://github.com/ncravino/lawd.css</a> together
+                    with other libraries, imported before them. I like to use it with <a href="https://jenil.github.io/chota/">chota.css</a>,
+                    which is great for a modern minimalist CSS lib for grids and some styling.</p>
+                <h2 id="chonkyness">Chonkyness</h2>
+                <p>These classes allow you to change the size of the text, relative to
+                    <code>--default-chonk-size</code>.
+                    The text size for <code>head</code>, <code>body</code>. <code>h1-6</code> will also be set when
+                    including the <code>lawd.css</code> file.</p>
+                <ul>
+                    <li class="tiny"><code>.tiny</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> minus <code>0.3rem</code>.</li>
+                    <li class="thin"><code>.thin</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> minus <code>0.2rem</code>.</li>
+                    <li class="fine"><code>.fine</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> minus <code>0.1rem</code>.</li>
+                    <li class="chonk"><code>.chonk</code> will be equal to <code>--default-chonk-size</code>, html and
+                        body will also be set to this size.</li>
+                    <li class="heckinchonker"><code>.heckinchonker</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> plus <code>0.1rem</code>, h6 will also be set to this size.
+                    </li>
+                    <li class="heftychonk"><code>.heftychonk</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> plus <code>0.2rem</code>, h5 will also be set to this size.
+                    </li>
+                    <li class="megachonk"><code>.megachonk</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> plus <code>0.3rem</code>, h4 will also be set to this size.
+                    </li>
+                    <li class="gojira"><code>.gojira</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> plus <code>0.4rem</code>, h3 will also be set to this size.
+                    </li>
+                    <li class="moonface"><code>.moonface</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> plus <code>0.5rem</code>, h2 will also be set to this size.
+                    </li>
+                    <li class="ohlawd"><code>.ohlawd</code> will set the <code>font-size</code> to
+                        <code>--default-chonk-size</code> plus <code>0.6rem</code>, h1 will also be set to this size.
+                    </li>
+                </ul>
+                <h2 id="notouriousness">Notouriousness</h2>
+                <p>These classes allow you to add a border around each letter, in order to make it stand against
+                    backgrounds that have a mix of light and dark colours.
+                    You can change the color overriding <code>--default-notoriousness-colour</code> which is
+                    <code>rgba(128,128,128,0.5)</code> by default, see variables bellow for more info.</p>
+                <ul>
+                    <li class="notorious"><code>.notorious</code> will add a
+                        <code>var(--default-thin-notouriousness)</code> <span
+                            style="background-color: rgb(0,0,0);">border using shadow around each letter. The default is
+                            1px.</span></li>
+                    <li class="blatant"><code>.blatant</code> will add a <code>var(--default-notouriousness)</code>
+                        <span style="background-color: rgb(0,0,0);">border using shadow around each letter. The default
+                            is 1.5px.</span></li>
+                </ul>
+                <h2 id="cuddliness">Cuddliness</h2>
+                <p>These classes allow you to change the <code>line-height</code>.
+                    The <code>line-height</code> set on import for <code>body</code> and <code>html</code> is
+                    <code>--default-chonk-height</code> which defaults to
+                    <code>var(--default-chonk-size) + 0.2rem</code>.</p>
+                <ul>
+                    <li>This is the default <code>line-height</code>:
+                        <pre>Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt 
 ut labore et dolore magna aliqua. </pre>
-            </li>
-            <li><code>.cuddly</code> will change <code>line-height</code> to <code>--default-cuddly-cuddliness</code> which defaults to <code>1em</code>:
-<pre class="cuddly">Lorem ipsum dolor sit amet, 
+                    </li>
+                    <li><code>.cuddly</code> will change <code>line-height</code> to
+                        <code>--default-cuddly-cuddliness</code> which defaults to <code>1em</code>:
+                        <pre class="cuddly">Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt 
 ut labore et dolore magna aliqua. </pre>
-            </li>
-            <li><code>.itfits</code> will change <code>line-height</code> to <code>--default-itfits-cuddliness</code> which defaults to <code>0.85em</code>:
-<pre class="itfits">Lorem ipsum dolor sit amet, 
+                    </li>
+                    <li><code>.itfits</code> will change <code>line-height</code> to
+                        <code>--default-itfits-cuddliness</code> which defaults to <code>0.85em</code>:
+                        <pre class="itfits">Lorem ipsum dolor sit amet, 
 consectetur adipiscing elit, 
 sed do eiusmod tempor incididunt 
 ut labore et dolore magna aliqua. </pre>
-            </li>
-            </ul>
-            <h2 id="css-variables">CSS Variables</h2>
-            <p>You can/should override any of the following variables:</p>
-            <ul>
-            <li><code>--default-chonk-size</code> sets the <code>font-size</code>, default is <code>1.1rem</code></li>
-            <li><code>--default-chonk-height</code> sets the <code>line-height</code>, default is <code>--default-chonk-size + 2rem</code>.</li>
-            <li><code>--default-thin-notoriousness</code> sets the amount of pixels used by the shadow in <code>.cuddly</code> .</li>
-            <li><code>--default-notoriousness</code> sets the amount of pixels used by the shadow in <code>.itfits</code>.</li>
-            <li><code>--default-notoriousness-colour</code> sets the colour of the shadow used by <code>.cuddly</code> and <code>.itfits</code>, default is <code>rgba(128, 128, 128, 0.5)</code>.</li>
-            <li><code>--default-cuddle-cuddliness</code> sets the <code>line-height</code> for <code>.cuddly</code>, default is <code>1em</code> .</li>
-            <li><code>--default-itfits-cuddliness</code> sets the <code>line-height</code> for <code>.itfits</code>, default is <code>0.85em</code>.</li>
-            </ul>
-            <p>The following variables can be overriden but may cause unexpectedly funny results:</p>
-            <ul>
-            <li><code>--default-negative-notoriousness</code> sets negative shadow pixels for <code>.cuddly</code>, automatically computed from <code>calc(0px - var(--default-notoriousness))</code>.</li>
-            <li><code>--default-negative-thin-notoriousness</code> sets negative shadow pixels for <code>.itfits</code>, automatically as <code>calc(0px - var(--default-thin-notoriousness))</code>  .</li>
-            </ul>
-            <h3 id="how-to-override-">How to override?</h3>
-            <p>Just create a <code>:root</code> element in a custom css file included after <code>lawd.css</code> and define what you want to change there, e.g.:</p>
-<pre><code><span class="hljs-selector-pseudo">:root</span>{
+                    </li>
+                </ul>
+                <h2 id="css-variables">CSS Variables</h2>
+                <p>You can/should override any of the following variables:</p>
+                <ul>
+                    <li><code>--default-chonk-size</code> sets the <code>font-size</code>, default is
+                        <code>1.1rem</code></li>
+                    <li><code>--default-chonk-height</code> sets the <code>line-height</code>, default is
+                        <code>--default-chonk-size + 2rem</code>.</li>
+                    <li><code>--default-thin-notoriousness</code> sets the amount of pixels used by the shadow in
+                        <code>.cuddly</code> .</li>
+                    <li><code>--default-notoriousness</code> sets the amount of pixels used by the shadow in
+                        <code>.itfits</code>.</li>
+                    <li><code>--default-notoriousness-colour</code> sets the colour of the shadow used by
+                        <code>.cuddly</code> and <code>.itfits</code>, default is <code>rgba(128, 128, 128, 0.5)</code>.
+                    </li>
+                    <li><code>--default-cuddle-cuddliness</code> sets the <code>line-height</code> for
+                        <code>.cuddly</code>, default is <code>1em</code> .</li>
+                    <li><code>--default-itfits-cuddliness</code> sets the <code>line-height</code> for
+                        <code>.itfits</code>, default is <code>0.85em</code>.</li>
+                </ul>
+                <p>The following variables can be overriden but may cause unexpectedly funny results:</p>
+                <ul>
+                    <li><code>--default-negative-notoriousness</code> sets negative shadow pixels for
+                        <code>.cuddly</code>, automatically computed from
+                        <code>calc(0px - var(--default-notoriousness))</code>.</li>
+                    <li><code>--default-negative-thin-notoriousness</code> sets negative shadow pixels for
+                        <code>.itfits</code>, automatically as
+                        <code>calc(0px - var(--default-thin-notoriousness))</code> .</li>
+                </ul>
+                <h3 id="how-to-override-">How to override?</h3>
+                <p>Just create a <code>:root</code> element in a custom css file included after <code>lawd.css</code>
+                    and define what you want to change there, e.g.:</p>
+                <pre><code><span class="hljs-selector-pseudo">:root</span>{
     <span class="hljs-attribute">--default-chonk-size</span>: <span class="hljs-number">2rem</span>;
 }
 </code></pre>
+            </div>
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
         </div>
-        <div class="col-1-lg col-1-md">&nbsp;</div>
 
     </main>
 
 
-    <footer class="row" style="padding: 1vh 0 1vh 0;min-height: 10vh;">
-        <div class="col-1-lg col-1-md">&nbsp;</div>
-        <div class="col">
-            <p class="is-center">Copyright 2023 ncravino All Rights Reserved</p>
-            <p class="is-center">This library is licensed under a BSD-3-Clause License.</p>
+    <footer class="container" style="min-height: 10vh;">
+        <div class="row">
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
+            <div class="col clearfix">
+                <p class="is-center">Copyright 2023 ncravino All Rights Reserved</p>
+                <p class="is-center">This library is licensed under a BSD-3-Clause License.</p>
+            </div>
+            <div class="col-1 hide-sm hide-xs">&nbsp;</div>
         </div>
-        <div class="col-1-lg col-1-md">&nbsp;</div>
+
     </footer>
 </body>
 
