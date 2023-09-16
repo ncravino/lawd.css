@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="48" height="48" version="1.1" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <ellipse cx="4.5188" cy="4.257" rx="4.3417" ry="2.4413"/>
+  <ellipse cx="6.4643" cy="8.5216" rx="5.7438" ry="3.7758"/>
+  <ellipse cx="11.472" cy="5.2919" rx=".59997" ry="3.4464"/>
+  <ellipse cx="1.5092" cy="10.51" rx=".59997" ry=".88715"/>
+  <ellipse cx="2.7844" cy="11.184" rx=".59997" ry=".88715"/>
+  <ellipse cx="11.388" cy="10.367" rx=".59997" ry=".88715"/>
+  <ellipse cx="10.08" cy="11.257" rx=".59997" ry=".88715"/>
+  <path transform="translate(-.15203 1.2332)" d="m3.5813 0.74328-2.2066 0.80099 0.40963-2.3115 0.89849 0.75524z"/>
+  <path transform="matrix(-1 0 0 1 9.2262 1.3071)" d="m3.5813 0.74328-2.2066 0.80099 0.40963-2.3115 0.89849 0.75524z"/>
+ </g>
+</svg>
